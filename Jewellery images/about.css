@@ -1,0 +1,140 @@
+
+
+.container-fluid{
+   
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.logo {
+  border-radius: 50%;
+  border: 2px solid lavenderblush;
+  height: 100px;
+  width: 100px;
+}
+
+.header {
+  border: 3px solid cornflowerblue;
+
+  padding: 10px;
+  background-color: blanchedalmond;
+}
+
+.name {
+  font-weight: 500;
+  text-shadow: 4px 0px 6px;
+  font-size: 34px;
+  color: maroon;
+  font-family: 'Roboto', sans-serif;
+}
+
+.search {
+  width: 220px;
+}
+
+.searchbox {
+  justify-content: right;
+}
+
+
+.container{
+    overflow: auto;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.img1{
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+
+.reserve{
+    text-align: center;
+}
+li{
+    font-weight: 600;
+}
+
+
+
+
+
+header{
+    vertical-align: middle;
+      }
+    
+      .pk{
+        border-radius: 50%;
+        margin:10px;
+      }
+    
+    span{
+      font-size: 22px;
+      font-weight: bolder;
+    }
+    
+      .d-flex{
+        float:right;
+    margin-right: 30px;
+    margin-top: 60px;
+      }
+
+
+
+
+
+
+
+
+
+
+      /* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .pk {
+    width: 100px;
+    height: 100px;
+  }
+  span {
+    font-size: 18px;
+  }
+}
+
+/* Adjustments for even smaller screens */
+@media (max-width: 576px) {
+  .pk {
+    width: 80px;
+    height: 80px;
+  }
+  span {
+    font-size: 16px;
+  }
+  .container {
+    padding: 5px;
+  }
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+  .d-flex {
+    float: none;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 1200px) {
+  .pk {
+    width: 200px;
+    height: 200px;
+  }
+  span {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,72 @@
+
+.logo {
+  border-radius: 50%;
+  border: 2px solid lavenderblush;
+  height: 100px;
+  width: 100px;
+}
+
+.header {
+  border: 3px solid cornflowerblue;
+
+  padding: 10px;
+  background-color: blanchedalmond;
+}
+
+.name {
+  font-weight: 500;
+  text-shadow: 4px 0px 6px;
+  font-size: 34px;
+  color: maroon;
+  font-family: 'Roboto', sans-serif;
+}
+
+.search {
+  width: 220px;
+}
+
+.searchbox {
+  justify-content: right;
+}
+
+.bordered-section {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: antiquewhite;
+}
+
+.bordered-message {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.shop-location {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop-location .text {
+  flex: 1;
+}
+
+.shop-location .map {
+  width: 40%;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .shop-location {
+      flex-direction: column;
+  }
+
+  .shop-location .map {
+      width: 100%;
+  }
+}
