@@ -1,0 +1,165 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="../Jewellery images/1.jpg" alt="" id=""><br>
+    <strong id="imgname">rajini</strong><br>
+    <button type="button" onclick="change(one)" id="one">Jewellery1</button>
+    <button type="button" onclick="change(two)" id="two">Jewellery2</button>
+    <button type="button" onclick="change(three)" id="three">Jewellery3</button>
+    <button type="button" onclick="change(four)" id="four">Jewellery4</button>
+    <button type="button" onclick="change(five)" id="five">Jewellery5</button>
+    <button type="button" onclick="change(six)" id="six">Jewellery6</button>
+
+    
+
+
+    <script>
+
+        function change(val){
+
+            if(val==one)
+            {
+                document.getElementById("one").innerHTML.src="../Jewellery images/1.jpg"
+                document.getElementById("imgname").innerHTML="rajini"
+            }
+            if(val==two)
+            {
+                document.getElementById("two").innerHTML.src="../Jewellery images/2.jpg"
+                document.getElementById("imgname").innerHTML="vijay"
+            }
+            if(val==three)
+            {
+                document.getElementById("three").innerHTML.src="../Jewellery images/3.jpg"
+                document.getElementById("imgname").innerHTML="ajith"
+            }
+            if(val==four)
+            {
+                document.getElementById("four").innerHTML.src="../Jewellery images/4.jpg"
+                document.getElementById("imgname").innerHTML="dhanush"
+            }
+            if(val==five)
+            {
+                document.getElementById("five").innerHTML.src="../Jewellery images/5.jpg"
+                document.getElementById("imgname").innerHTML="simbu"
+            }
+            if(val==six)
+            {
+                document.getElementById("six").innerHTML.src="../Jewellery images/sunny.jpg"
+                document.getElementById("imgname").innerHTML="sunny"
+            }
+
+        }
+
+
+    </script>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="../Jewellery images/1.jpg" alt="" id="jewelleryImage"><br>
+    <strong id="imgname">rajini</strong><br>
+    <button type="button" onclick="change('one')" id="one">Jewellery1</button>
+    <button type="button" onclick="change('two')" id="two">Jewellery2</button>
+    <button type="button" onclick="change('three')" id="three">Jewellery3</button>
+    <button type="button" onclick="change('four')" id="four">Jewellery4</button>
+    <button type="button" onclick="change('five')" id="five">Jewellery5</button>
+    <button type="button" onclick="change('six')" id="six">Jewellery6</button>
+
+    <div id="d1"></div>
+    <div id="d2"></div>
+
+    <script>
+        function change(val){
+            let imgElement = document.getElementById("jewelleryImage");
+            let nameElement = document.getElementById("imgname");
+
+            switch(val) {
+                case 'one':
+                    imgElement.src = "../Jewellery images/1.jpg";
+                    nameElement.innerHTML = "rajini";
+                    break;
+                case 'two':
+                    imgElement.src = "../Jewellery images/2.jpg";
+                    nameElement.innerHTML = "vijay";
+                    break;
+                case 'three':
+                    imgElement.src = "../Jewellery images/3.jpg";
+                    nameElement.innerHTML = "ajith";
+                    break;
+                case 'four':
+                    imgElement.src = "../Jewellery images/4.jpg";
+                    nameElement.innerHTML = "dhanush";
+                    break;
+                case 'five':
+                    imgElement.src = "../Jewellery images/5.jpg";
+                    nameElement.innerHTML = "simbu";
+                    break;
+                case 'six':
+                    imgElement.src = "../Jewellery images/sunny.jpg";
+                    nameElement.innerHTML = "sunny";
+                    break;
+                default:
+                    console.log("Invalid option");
+                    break;
+            }
+        }
+
+        let dateObj=new Date
+        document.getElementById("d1").innerHTML=dateObj
+        // document.getElementById("d2").innerHTML=dateObj.getMonth
+
+        let month = 5;
+        
+
+        function getMonthName(month) {
+    switch (month) {
+        case 0:
+            return "January";
+        case 1:
+            return "February";
+        case 2:
+            return "March";
+        case 3:
+            return "April";
+        case 4:
+            return "May";
+        case 5:
+            return "June";
+        case 6:
+            return "July";
+        case 7:
+            return "August";
+        case 8:
+            return "September";
+        case 9:
+            return "October";
+        case 10:
+            return "November";
+        case 11:
+            return "December";
+        default:
+            return "Invalid month";
+    }
+}
+
+document.write(getMonthName(month)); 
+
+    </script>
+    
+</body>
+</html>
