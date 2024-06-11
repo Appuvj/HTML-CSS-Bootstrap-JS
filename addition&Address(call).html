@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            border: 2px solid red;
+            width: 300px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 12px 12px 12px violet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" class="form">
+        <label for="">enter first number :</label>
+        <input type="text" name="first" id="first"><br><br>
+        <label for="">enter second number :</label>
+        <input type="text" name="second" id="second"><br><br>
+        <button type="button" onclick="addition()">Add</button>
+        <button type="button" onclick="sub()">Sub</button>
+        <button type="button" onclick="multi()">Multi</button>
+        <button type="button" onclick="div()">Div</button><br>
+        <h3 >Result : </h3> <h3 id="Result"></h3> 
+
+    </form>
+
+    <form action="">
+
+        <label for="">temp address </label>
+        <input type="text" name="address1" id="address1">
+        <button type="button" onclick="change()">submit</button>
+        <label for="">permanent address </label>
+        <input type="text" name="address2" id="address2">
+    </form>
+
+    <script>
+        function change(){
+            document.getElementById("address2").value = document.getElementById("address1").value;
+            
+        }
+
+
+        function addition() {
+        let no1= document.getElementById("first").value;
+        let no2= document.getElementById("second").value
+       let a= (parseInt(no1)+parseInt(no2))
+        document.getElementById("Result").innerHTML=a
+        
+        }
+
+        function sub(){
+            let no3= document.getElementById("first").value;
+            let no4= document.getElementById("second").value;
+            let b=(parseInt(no3)-parseInt(no4))
+            document.getElementById("Result").innerHTML=b
+        }
+
+        function multi(){
+            let no5= document.getElementById("first").value;
+            let no6= document.getElementById("second").value;
+            let c=(parseInt(no5)*parseInt(no6))
+            document.getElementById("Result").innerHTML=c
+        }
+
+        function div(){
+            let no7= document.getElementById("first").value;
+            let no8= document.getElementById("second").value;
+            let d=(parseInt(no7)/parseInt(no8))
+            document.getElementById("Result").innerHTML=d
+        }
+    </script>
+
+</body>
+
+</html>
