@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="../Changepond/Jewellery images/sunny.jpg" height="300px" width="400px" id="img1" alt="">
+    <strong id="imgname">sunny</strong>
+    <button type="button" onclick="changeimage()"> change image</button> 
+
+
+    <script>
+        function changeimage(){
+
+            document.getElementById("img1").src="../Changepond/Jewellery images/2.jpg"
+            document.getElementById("imgname").innerHTML="model"
+            
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./Changepond/Jewellery images/sunny.jpg" alt="gold" height="300px" width="300px" id="img1"><br>
+    <strong id="imgName">gold</strong><br>
+    <button type="button" onclick="toggleImage()">Toggle Image</button>
+    <script>
+        var originalImage = "../Changepond/Jewellery images/sunny.jpg";
+        var alternateImage = "../Changepond/Jewellery images/2.jpg";
+        var originalText = "sunny";
+        var alternateText = "model";
+        var isAlternate = false;
+
+        function toggleImage(){
+            var img = document.getElementById("img1");
+            var imgName = document.getElementById("imgName");
+
+            if (isAlternate) {
+                img.src = originalImage;
+                imgName.innerHTML = originalText;
+                isAlternate = false;
+            } else {
+                img.src = alternateImage;
+                imgName.innerHTML = alternateText;
+                isAlternate = true;
+            }
+        }
+    </script>
+</body>
+</html>
